@@ -1,0 +1,5 @@
+package customerProducer;
+
+public class Customer {
+
+}

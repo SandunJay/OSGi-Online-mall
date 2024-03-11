@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;bakeryItemsProducer&apos; in &apos;moviecustomerconsumer.Activator.start(...)&apos; to &apos;movieItemsProducer&apos;&#x0D;&#x0A;- Original project: &apos;MovieCustomerConsumer&apos;&#x0D;&#x0A;- Original element: &apos;moviecustomerconsumer.Activator.start(BundleContext).bakeryItemsProducer&apos;&#x0D;&#x0A;- Renamed element: &apos;bakeryItemsProducer&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;bakeryItemsProducer&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;moviecustomerconsumer{Activator.java[Activator~start~QBundleContext;@bakeryItemsProducer!958!1068!976!994!QMovieItemProducer;!0!false" name="movieItemsProducer" references="true" stamp="1710172132248" version="1.0"/>
+</session>
