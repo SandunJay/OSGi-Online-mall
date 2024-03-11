@@ -3,10 +3,13 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MovieAdminConsumer
 Bundle-SymbolicName: MovieAdminConsumer
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: movieadminconsumer.Activator
+Bundle-Activator: movieadminconsumer.MovieAdminConsumerActivator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: MovieAdminConsumer
-Import-Package: movieadminproducer,
+Import-Package: common_publisher,
+ movieadminproducer,
+ moviecustomerproducer,
  movieitemsproducer,
  org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
+Export-Package: movieadminconsumer

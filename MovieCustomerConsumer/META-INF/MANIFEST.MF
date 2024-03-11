@@ -3,10 +3,11 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MovieCustomerConsumer
 Bundle-SymbolicName: MovieCustomerConsumer
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: moviecustomerconsumer.Activator
+Bundle-Activator: moviecustomerconsumer.MovieCustomerConsumerActivator
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Automatic-Module-Name: MovieCustomerConsumer
 Import-Package: moviecustomerproducer,
  movieitemsproducer,
  org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
+Export-Package: moviecustomerconsumer

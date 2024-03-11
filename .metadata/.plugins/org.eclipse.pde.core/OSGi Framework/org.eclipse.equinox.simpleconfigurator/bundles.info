@@ -1,5 +1,7 @@
 #encoding=UTF-8
 #version=1
+CommonMovieSubscriber,1.0.0.qualifier,file:/D:/SLIIT%20lecture%20materials/Y3S1/SA/Assignment/Eclipse%20workspace/CommonMovieSubscriber/,4,true
+Common_Publisher,1.0.0.qualifier,file:/D:/SLIIT%20lecture%20materials/Y3S1/SA/Assignment/Eclipse%20workspace/Common%20Publisher/,4,true
 MovieAdminConsumer,1.0.0.qualifier,file:/D:/SLIIT%20lecture%20materials/Y3S1/SA/Assignment/Eclipse%20workspace/MovieAdminConsumer/,4,true
 MovieAdminProducer,1.0.0.qualifier,file:/D:/SLIIT%20lecture%20materials/Y3S1/SA/Assignment/Eclipse%20workspace/MovieAdminProducer/,4,true
 MovieCustomerConsumer,1.0.0.qualifier,file:/D:/SLIIT%20lecture%20materials/Y3S1/SA/Assignment/Eclipse%20workspace/MovieCustomerConsumer/,4,true
@@ -119,8 +121,8 @@ org.eclipse.buildship.compat,3.1.7.v20230428-1350,file:/C:/Users/sandu/.p2/pool/
 org.eclipse.buildship.core,3.1.7.v20230428-1350,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.buildship.core_3.1.7.v20230428-1350.jar,4,true
 org.eclipse.buildship.ui,3.1.7.v20230428-1350,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.buildship.ui_3.1.7.v20230428-1350.jar,4,true
 org.eclipse.cdt.core.native,6.3.200.202303140100,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.cdt.core.native_6.3.200.202303140100.jar,4,true
-org.eclipse.cdt.core.win32,6.1.0.202211062329,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.cdt.core.win32_6.1.0.202211062329.jar,4,true
-org.eclipse.cdt.core.win32.x86_64,11.2.0.202306051917,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.cdt.core.win32.x86_64_11.2.0.202306051917/,4,true
+org.eclipse.cdt.core.win32,6.1.0.202211062329,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.cdt.core.win32_6.1.0.202211062329.jar,4,false
+org.eclipse.cdt.core.win32.x86_64,11.2.0.202306051917,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.cdt.core.win32.x86_64_11.2.0.202306051917/,4,false
 org.eclipse.compare,3.9.0.v20230504-0624,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.compare_3.9.0.v20230504-0624.jar,4,true
 org.eclipse.compare.core,3.8.0.v20230517-1315,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.compare.core_3.8.0.v20230517-1315.jar,4,true
 org.eclipse.compare.win32,1.3.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.compare.win32_1.3.0.v20230317-0901.jar,4,true
@@ -134,13 +136,13 @@ org.eclipse.core.expressions,3.9.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/
 org.eclipse.core.externaltools,1.3.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.externaltools_1.3.0.v20230317-0802.jar,4,true
 org.eclipse.core.filebuffers,3.8.0.v20230316-1200,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.filebuffers_3.8.0.v20230316-1200.jar,4,true
 org.eclipse.core.filesystem,1.10.0.v20230425-0513,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.filesystem_1.10.0.v20230425-0513.jar,4,true
-org.eclipse.core.filesystem.win32.x86_64,1.4.300.v20220812-1420,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.filesystem.win32.x86_64_1.4.300.v20220812-1420.jar,4,true
+org.eclipse.core.filesystem.win32.x86_64,1.4.300.v20220812-1420,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.filesystem.win32.x86_64_1.4.300.v20220812-1420.jar,4,false
 org.eclipse.core.jobs,3.14.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.jobs_3.14.0.v20230317-0901.jar,4,true
 org.eclipse.core.net,1.5.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.net_1.5.0.v20230317-0901.jar,4,true
-org.eclipse.core.net.win32,1.1.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.net.win32_1.1.0.v20230317-0901.jar,4,true
-org.eclipse.core.net.win32.x86_64,1.2.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.net.win32.x86_64_1.2.0.v20230317-0901.jar,4,true
+org.eclipse.core.net.win32,1.1.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.net.win32_1.1.0.v20230317-0901.jar,4,false
+org.eclipse.core.net.win32.x86_64,1.2.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.net.win32.x86_64_1.2.0.v20230317-0901.jar,4,false
 org.eclipse.core.resources,3.19.0.v20230510-1240,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.resources_3.19.0.v20230510-1240.jar,4,true
-org.eclipse.core.resources.win32.x86_64,3.5.500.v20220812-1420,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.resources.win32.x86_64_3.5.500.v20220812-1420.jar,4,true
+org.eclipse.core.resources.win32.x86_64,3.5.500.v20220812-1420,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.resources.win32.x86_64_3.5.500.v20220812-1420.jar,4,false
 org.eclipse.core.runtime,3.27.0.v20230515-1719,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.runtime_3.27.0.v20230515-1719.jar,4,true
 org.eclipse.core.variables,3.6.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.core.variables_3.6.0.v20230317-0802.jar,4,true
 org.eclipse.datatools.common.doc.user,1.15.0.202305310959,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.datatools.common.doc.user_1.15.0.202305310959.jar,4,true
@@ -292,7 +294,7 @@ org.eclipse.e4.ui.ide,3.17.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugin
 org.eclipse.e4.ui.model.workbench,2.4.0.v20230404-0801,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.model.workbench_2.4.0.v20230404-0801.jar,4,true
 org.eclipse.e4.ui.progress,0.4.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.progress_0.4.0.v20230501-1823.jar,4,true
 org.eclipse.e4.ui.services,1.6.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.services_1.6.0.v20230501-1823.jar,4,true
-org.eclipse.e4.ui.swt.win32,1.2.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.swt.win32_1.2.0.v20230501-1823.jar,4,true
+org.eclipse.e4.ui.swt.win32,1.2.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.swt.win32_1.2.0.v20230501-1823.jar,4,false
 org.eclipse.e4.ui.widgets,1.4.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.widgets_1.4.0.v20230317-0802.jar,4,true
 org.eclipse.e4.ui.workbench,1.15.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.workbench_1.15.0.v20230501-1823.jar,4,true
 org.eclipse.e4.ui.workbench.addons.swt,1.5.0.v20230501-1823,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.e4.ui.workbench.addons.swt_1.5.0.v20230501-1823.jar,4,true
@@ -306,9 +308,9 @@ org.eclipse.ecf.identity,3.10.0.v20230422-0242,file:/C:/Users/sandu/.p2/pool/plu
 org.eclipse.ecf.provider.filetransfer,3.3.0.v20230422-0242,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.filetransfer_3.3.0.v20230422-0242.jar,4,true
 org.eclipse.ecf.provider.filetransfer.httpclient5,1.1.0.v20230423-0417,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.filetransfer.httpclient5_1.1.0.v20230423-0417.jar,4,true
 org.eclipse.ecf.provider.filetransfer.httpclient5.win32,1.1.0.v20230423-0417,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.filetransfer.httpclient5.win32_1.1.0.v20230423-0417.jar,4,true
-org.eclipse.ecf.provider.filetransfer.ssl,1.1.0.v20230422-0242,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.1.0.v20230422-0242.jar,4,true
+org.eclipse.ecf.provider.filetransfer.ssl,1.1.0.v20230422-0242,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.1.0.v20230422-0242.jar,4,false
 org.eclipse.ecf.provider.jmdns,4.3.302.v20221117-1507,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.provider.jmdns_4.3.302.v20221117-1507.jar,4,true
-org.eclipse.ecf.ssl,1.3.0.v20230507-1921,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.ssl_1.3.0.v20230507-1921.jar,4,true
+org.eclipse.ecf.ssl,1.3.0.v20230507-1921,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ecf.ssl_1.3.0.v20230507-1921.jar,4,false
 org.eclipse.eclemma.core,3.1.7.202306070845,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.eclemma.core_3.1.7.202306070845.jar,4,true
 org.eclipse.eclemma.doc,3.1.7.202306070845,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.eclemma.doc_3.1.7.202306070845.jar,4,true
 org.eclipse.eclemma.ui,3.1.7.202306070845,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.eclemma.ui_3.1.7.202306070845.jar,4,true
@@ -370,7 +372,7 @@ org.eclipse.equinox.http.servlet,1.7.400.v20221006-1531,file:/C:/Users/sandu/.p2
 org.eclipse.equinox.jsp.jasper,1.1.700.v20220801-1124,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.jsp.jasper_1.1.700.v20220801-1124.jar,4,true
 org.eclipse.equinox.jsp.jasper.registry,1.2.100.v20211021-1418,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.jsp.jasper.registry_1.2.100.v20211021-1418.jar,4,true
 org.eclipse.equinox.launcher,1.6.400.v20210924-0641,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar,4,true
-org.eclipse.equinox.launcher.win32.win32.x86_64,1.2.700.v20221108-1024,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.700.v20221108-1024/,4,true
+org.eclipse.equinox.launcher.win32.win32.x86_64,1.2.700.v20221108-1024,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.launcher.win32.win32.x86_64_1.2.700.v20221108-1024/,4,false
 org.eclipse.equinox.p2.artifact.repository,1.5.0.v20230509-1332,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.p2.artifact.repository_1.5.0.v20230509-1332.jar,4,true
 org.eclipse.equinox.p2.console,1.3.0.v20230330-0930,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.p2.console_1.3.0.v20230330-0930.jar,4,true
 org.eclipse.equinox.p2.core,2.10.0.v20230330-0930,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.p2.core_2.10.0.v20230330-0930.jar,4,true
@@ -405,7 +407,7 @@ org.eclipse.equinox.preferences,3.10.200.v20230120-0604,file:/C:/Users/sandu/.p2
 org.eclipse.equinox.registry,3.11.200.v20220817-1601,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.registry_3.11.200.v20220817-1601.jar,4,true
 org.eclipse.equinox.security,1.3.1000.v20220801-1135,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.security_1.3.1000.v20220801-1135.jar,4,true
 org.eclipse.equinox.security.ui,1.3.400.v20221007-1815,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.security.ui_1.3.400.v20221007-1815.jar,4,true
-org.eclipse.equinox.security.win32.x86_64,1.1.300.v20211021-1418,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.security.win32.x86_64_1.1.300.v20211021-1418.jar,4,true
+org.eclipse.equinox.security.win32.x86_64,1.1.300.v20211021-1418,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.security.win32.x86_64_1.1.300.v20211021-1418.jar,4,false
 org.eclipse.equinox.simpleconfigurator,1.4.200.v20221111-1340,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.simpleconfigurator_1.4.200.v20221111-1340.jar,1,true
 org.eclipse.equinox.simpleconfigurator.manipulator,2.2.100.v20221117-1044,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.2.100.v20221117-1044.jar,4,true
 org.eclipse.gef,3.14.0.202306071707,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.gef_3.14.0.202306071707.jar,4,true
@@ -458,10 +460,10 @@ org.eclipse.jface.notifications,0.6.0.v20230317-0802,file:/C:/Users/sandu/.p2/po
 org.eclipse.jface.text,3.24.0.v20230525-0719,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jface.text_3.24.0.v20230525-0719.jar,4,true
 org.eclipse.jgit,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit_6.6.0.202305301015-r.jar,4,true
 org.eclipse.jgit.archive,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.archive_6.6.0.202305301015-r.jar,4,true
-org.eclipse.jgit.gpg.bc,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.gpg.bc_6.6.0.202305301015-r.jar,4,true
+org.eclipse.jgit.gpg.bc,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.gpg.bc_6.6.0.202305301015-r.jar,4,false
 org.eclipse.jgit.http.apache,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.http.apache_6.6.0.202305301015-r.jar,4,true
 org.eclipse.jgit.ssh.apache,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.ssh.apache_6.6.0.202305301015-r.jar,4,true
-org.eclipse.jgit.ssh.apache.agent,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.ssh.apache.agent_6.6.0.202305301015-r.jar,4,true
+org.eclipse.jgit.ssh.apache.agent,6.6.0.202305301015-r,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jgit.ssh.apache.agent_6.6.0.202305301015-r.jar,4,false
 org.eclipse.jpt.common.branding,1.4.1.v201902121834,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jpt.common.branding_1.4.1.v201902121834.jar,4,true
 org.eclipse.jpt.common.core,1.5.1.v202301061019,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jpt.common.core_1.5.1.v202301061019.jar,4,true
 org.eclipse.jpt.common.eclipselink.branding,1.3.101.v201902121834,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jpt.common.eclipselink.branding_1.3.101.v201902121834.jar,4,true
@@ -594,7 +596,7 @@ org.eclipse.jst.ws.jaxws.utils,1.0.302.v201902162239,file:/C:/Users/sandu/.p2/po
 org.eclipse.jst.ws.uddiregistry,1.1.1.v202304290519,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jst.ws.uddiregistry_1.1.1.v202304290519.jar,4,true
 org.eclipse.jst.ws.ui,1.1.1.v202103201626,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.jst.ws.ui_1.1.1.v202103201626.jar,4,true
 org.eclipse.justj.openjdk.hotspot.jre.full,17.0.7.v20230425-1502,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full_17.0.7.v20230425-1502.jar,4,true
-org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64,17.0.7.v20230425-1502,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/,4,true
+org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64,17.0.7.v20230425-1502,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.7.v20230425-1502/,4,false
 org.eclipse.lsp4e,0.16.1.202305241229,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.lsp4e_0.16.1.202305241229.jar,4,true
 org.eclipse.lsp4e.debug,0.15.2.202305241157,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.lsp4e.debug_0.15.2.202305241157.jar,4,true
 org.eclipse.lsp4j,0.21.0.v20230517-2120,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.lsp4j_0.21.0.v20230517-2120.jar,4,true
@@ -616,7 +618,7 @@ org.eclipse.m2e.editor.lemminx,2.0.3.20230520-0934,file:/C:/Users/sandu/.p2/pool
 org.eclipse.m2e.jdt,2.3.0.20230523-2033,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.jdt_2.3.0.20230523-2033.jar,4,true
 org.eclipse.m2e.jdt.ui,2.0.200.20230228-2348,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.jdt.ui_2.0.200.20230228-2348.jar,4,true
 org.eclipse.m2e.launching,2.0.500.20230329-2139,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.launching_2.0.500.20230329-2139.jar,4,true
-org.eclipse.m2e.logback,2.1.200.20230523-2106,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.logback_2.1.200.20230523-2106.jar,4,true
+org.eclipse.m2e.logback,2.1.200.20230523-2106,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.logback_2.1.200.20230523-2106.jar,4,false
 org.eclipse.m2e.maven.runtime,3.9.100.20230519-1558,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_3.9.100.20230519-1558/,4,true
 org.eclipse.m2e.mavenarchiver,2.0.400.20230520-0934,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.mavenarchiver_2.0.400.20230520-0934.jar,4,true
 org.eclipse.m2e.model.edit,2.0.300.20230320-2130,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.m2e.model.edit_2.0.300.20230320-2130.jar,4,true
@@ -714,7 +716,7 @@ org.eclipse.oomph.base.edit,1.16.0.v20230204-0932,file:/C:/Users/sandu/.p2/pool/
 org.eclipse.oomph.extractor.lib,1.9.0.v20220421-1218,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.extractor.lib_1.9.0.v20220421-1218.jar,4,true
 org.eclipse.oomph.jreinfo,1.17.0.v20220520-1242,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.jreinfo_1.17.0.v20220520-1242.jar,4,true
 org.eclipse.oomph.jreinfo.ui,1.15.0.v20220520-1242,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.jreinfo.ui_1.15.0.v20220520-1242.jar,4,true
-org.eclipse.oomph.jreinfo.win32.x86_64,1.8.0.v20220421-1218,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.jreinfo.win32.x86_64_1.8.0.v20220421-1218.jar,4,true
+org.eclipse.oomph.jreinfo.win32.x86_64,1.8.0.v20220421-1218,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.jreinfo.win32.x86_64_1.8.0.v20220421-1218.jar,4,false
 org.eclipse.oomph.p2,1.16.0.v20220421-1218,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.p2_1.16.0.v20220421-1218.jar,4,true
 org.eclipse.oomph.p2.core,1.25.0.v20230509-0732,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.p2.core_1.25.0.v20230509-0732.jar,4,true
 org.eclipse.oomph.p2.doc,1.13.0.v20220421-1218,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.p2.doc_1.13.0.v20220421-1218.jar,4,true
@@ -741,7 +743,7 @@ org.eclipse.oomph.workingsets,1.13.0.v20230416-0642,file:/C:/Users/sandu/.p2/poo
 org.eclipse.oomph.workingsets.edit,1.13.0.v20230204-0932,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.workingsets.edit_1.13.0.v20230204-0932.jar,4,true
 org.eclipse.oomph.workingsets.editor,1.14.0.v20230204-0932,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.oomph.workingsets.editor_1.14.0.v20230204-0932.jar,4,true
 org.eclipse.osgi,3.18.400.v20230509-2241,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.osgi_3.18.400.v20230509-2241.jar,1,true
-org.eclipse.osgi.compatibility.state,1.2.800.v20221116-1440,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.osgi.compatibility.state_1.2.800.v20221116-1440.jar,4,true
+org.eclipse.osgi.compatibility.state,1.2.800.v20221116-1440,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.osgi.compatibility.state_1.2.800.v20221116-1440.jar,4,false
 org.eclipse.osgi.services,3.11.100.v20221006-1531,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.osgi.services_3.11.100.v20221006-1531.jar,4,true
 org.eclipse.osgi.util,3.7.200.v20230103-1101,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.osgi.util_3.7.200.v20230103-1101.jar,4,true
 org.eclipse.pde,3.13.2300.v20230605-0440,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.pde_3.13.2300.v20230605-0440.jar,4,true
@@ -773,7 +775,7 @@ org.eclipse.platform.doc.user,4.28.0.v20230601-1614,file:/C:/Users/sandu/.p2/poo
 org.eclipse.rcp,4.28.0.v20230605-0440,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.rcp_4.28.0.v20230605-0440.jar,4,true
 org.eclipse.search,3.15.0.v20230427-2049,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.search_3.15.0.v20230427-2049.jar,4,true
 org.eclipse.swt,3.124.0.v20230523-1044,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.swt_3.124.0.v20230523-1044.jar,4,true
-org.eclipse.swt.win32.win32.x86_64,3.124.0.v20230523-1044,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.swt.win32.win32.x86_64_3.124.0.v20230523-1044.jar,4,true
+org.eclipse.swt.win32.win32.x86_64,3.124.0.v20230523-1044,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.swt.win32.win32.x86_64_3.124.0.v20230523-1044.jar,4,false
 org.eclipse.team.core,3.10.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.team.core_3.10.0.v20230317-0901.jar,4,true
 org.eclipse.team.genericeditor.diff.extension,1.2.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.team.genericeditor.diff.extension_1.2.0.v20230317-0901.jar,4,true
 org.eclipse.team.ui,3.10.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.team.ui_3.10.0.v20230317-0901.jar,4,true
@@ -816,7 +818,7 @@ org.eclipse.ui.trace,1.3.0.v20230515-0022,file:/C:/Users/sandu/.p2/pool/plugins/
 org.eclipse.ui.views,3.12.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.views_3.12.0.v20230317-0802.jar,4,true
 org.eclipse.ui.views.log,1.4.0.v20230418-0745,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.views.log_1.4.0.v20230418-0745.jar,4,true
 org.eclipse.ui.views.properties.tabbed,3.10.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.views.properties.tabbed_3.10.0.v20230317-0802.jar,4,true
-org.eclipse.ui.win32,3.5.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.win32_3.5.0.v20230317-0802.jar,4,true
+org.eclipse.ui.win32,3.5.0.v20230317-0802,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.win32_3.5.0.v20230317-0802.jar,4,false
 org.eclipse.ui.workbench,3.129.0.v20230525-0648,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.workbench_3.129.0.v20230525-0648.jar,4,true
 org.eclipse.ui.workbench.texteditor,3.17.0.v20230316-1200,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.ui.workbench.texteditor_3.17.0.v20230316-1200.jar,4,true
 org.eclipse.update.configurator,3.5.0.v20230317-0901,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.update.configurator_3.5.0.v20230317-0901.jar,4,true
@@ -826,7 +828,7 @@ org.eclipse.userstorage.oauth,1.1.0.v20190307-0457,file:/C:/Users/sandu/.p2/pool
 org.eclipse.userstorage.ui,1.1.0.v20190307-0457,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.userstorage.ui_1.1.0.v20190307-0457.jar,4,true
 org.eclipse.wildwebdeveloper,1.0.7.202305232103,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wildwebdeveloper_1.0.7.202305232103/,4,true
 org.eclipse.wildwebdeveloper.embedder.node,1.0.2.202212140804,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wildwebdeveloper.embedder.node_1.0.2.202212140804.jar,4,true
-org.eclipse.wildwebdeveloper.embedder.node.win32.x86_64,1.0.4.202304192009,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wildwebdeveloper.embedder.node.win32.x86_64_1.0.4.202304192009.jar,4,true
+org.eclipse.wildwebdeveloper.embedder.node.win32.x86_64,1.0.4.202304192009,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wildwebdeveloper.embedder.node.win32.x86_64_1.0.4.202304192009.jar,4,false
 org.eclipse.wildwebdeveloper.xml,1.1.0.202304242122,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wildwebdeveloper.xml_1.1.0.202304242122.jar,4,true
 org.eclipse.wst.command.env,1.0.600.v202007142057,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wst.command.env_1.0.600.v202007142057.jar,4,true
 org.eclipse.wst.command.env.core,1.1.0.v201910301957,file:/C:/Users/sandu/.p2/pool/plugins/org.eclipse.wst.command.env.core_1.1.0.v201910301957.jar,4,true
