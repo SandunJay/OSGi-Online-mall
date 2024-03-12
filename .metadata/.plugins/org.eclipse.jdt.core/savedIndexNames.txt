@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\DELL\OneDrive\Desktop\OSGI-new\.metadata\.plugins\org.eclipse.jdt.core
+2105420749.index
+1525315817.index
+1674006454.index
+2399654849.index
+1865797976.index

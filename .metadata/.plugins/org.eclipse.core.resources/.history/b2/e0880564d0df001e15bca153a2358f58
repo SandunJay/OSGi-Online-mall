@@ -1,0 +1,11 @@
+package deliver;
+
+public class ServiceDeliveryImp implements ServiceDelivery{
+
+	@Override
+	public void deliverService() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

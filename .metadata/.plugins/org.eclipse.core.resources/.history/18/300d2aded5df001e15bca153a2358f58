@@ -1,0 +1,80 @@
+package subscriber;
+
+import categories.ServiceCategories;
+import deliver.ServiceDelivery;
+import java.util.Scanner;
+
+import javax.naming.Context;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+public class Activator implements BundleActivator {
+	
+	ServiceReference serviceReference;
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		Scanner sc = new Scanner(System.in);
+		int ans = 0;
+		
+        try {
+            do {
+                System.out.println("************************************************");
+                System.out.println("Welcome to Clothing Store.\n");
+                System.out.println("Choose service number to recieve our services: ");
+                System.out.println(" 1 -  Categories");
+                System.out.println(" 2 -  Promotions");
+                System.out.println(" 3 -  Delivery Service");
+                System.out.println("Enter -1 to exit.");
+                
+                ans = sc.nextInt();
+                switch (ans) {
+                    case 1: {
+                        this.serviceReference = context.getServiceReference(ServiceCategories.class.getName());
+                        final ServiceCategories serviceCategories = (ServiceCategories)context.getService(this.serviceReference);
+                        if (serviceCategories != null) {
+                        	serviceCategories.displayCategories();
+                            continue;
+                        }
+                        continue;
+                    }
+                    case 2: {
+                        this.serviceReference = context.getServiceReference(ServicePromotions.class.getName());
+                        final ServicePromotions servicePromotions = (ServicePromotions)context.getService(this.serviceReference);
+                        if (servicePromotions != null) {
+                        	servicePromotions.promotions();
+                            continue;
+                        }
+                        continue;
+                    }
+                    case 3: {
+                        this.serviceReference = context.getServiceReference(ServiceDelivery.class.getName());
+                        final ServiceDelivery serviceDelivery = (ServiceDelivery)context.getService(this.serviceReference);
+                        if (serviceDelivery != null) {
+                            serviceDelivery.deliverService();
+                            continue;
+                        }
+                        continue;
+                    }
+                    case 99: {
+                        continue;
+                    }
+                    default: {
+                        System.out.println("Invalid number.");
+                        continue;
+                    }
+                }
+            } while (ans != -1);
+	}catch (Exception ex) {
+        System.out.println("Exception occured. ");
+    }
+	}
+	
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Goodbye World!!");
+	}
+
+}

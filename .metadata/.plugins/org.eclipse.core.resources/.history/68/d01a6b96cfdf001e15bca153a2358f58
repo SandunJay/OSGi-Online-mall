@@ -1,0 +1,5 @@
+package deliver;
+
+public interface ServiceDelivery {
+
+}
