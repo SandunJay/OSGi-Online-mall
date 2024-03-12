@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: SaloonSubscriber
+Bundle-SymbolicName: SaloonSubscriber
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: saloonsubscriber.SaloonServiceActivator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: SaloonSubscriber
+Import-Package: common_publisher,
+ org.osgi.framework;version="1.3.0",
+ saloonpublisher
+Bundle-ActivationPolicy: lazy
+Export-Package: saloonsubscriber
