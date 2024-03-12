@@ -1016,9 +1016,11 @@
     </setAttribute>
     <setAttribute key="selected_workspace_bundles">
         <setEntry value="Categories@default:default"/>
+        <setEntry value="CommonPublisher@default:default"/>
+        <setEntry value="Common_Subscriber@default:default"/>
+        <setEntry value="CustomerSubscriber@default:default"/>
         <setEntry value="Deliver@default:default"/>
         <setEntry value="Promo@default:default"/>
-        <setEntry value="Subscriber@default:default"/>
     </setAttribute>
     <booleanAttribute key="show_selected_only" value="false"/>
     <booleanAttribute key="tracing" value="false"/>

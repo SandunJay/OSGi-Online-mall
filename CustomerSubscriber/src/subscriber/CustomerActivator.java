@@ -12,7 +12,7 @@ import org.osgi.framework.ServiceReference;
 import promo.ServicePromo;
 import promo.ServicePromoImpl;
 
-public class Activator implements BundleActivator {
+public class CustomerActivator implements BundleActivator {
 	
 	private boolean authenticateUser() {
 		System.out.println("\n==============Login==============\n");

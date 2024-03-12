@@ -12,7 +12,7 @@ public class Activator implements BundleActivator {
 	public void start(BundleContext context) throws Exception {
 		 final ServicePromo promotions = (ServicePromo) new ServicePromoImpl();
 	     this.serviceRegistration = context.registerService(ServicePromo.class.getName(), (Object)promotions, null);
-	     System.out.println("Promo service stop!");
+	     System.out.println("Promo service start!");
 	}
 	
 	@Override

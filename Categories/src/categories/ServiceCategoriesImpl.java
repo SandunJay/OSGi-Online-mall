@@ -46,11 +46,12 @@ public class ServiceCategoriesImpl implements ServiceCategories{
 		this.products = new Products();
 		String size;
 		
-		System.out.println("\n\n\nPlease Select your size:(M/L/XL)");
-		size = sc.next().toUpperCase();
+
 		
 		switch(answer) {
 			case 1:{
+				System.out.println("\n\n\nPlease Select your size:(M/L/XL)");
+				size = sc.next().toUpperCase();
 				if(size == "M") {
 			        this.products.setProductName("Shirt 1");
 			        this.products.setProductprice(500.00);
@@ -72,6 +73,8 @@ public class ServiceCategoriesImpl implements ServiceCategories{
 				}
 			}
             case 2: {
+        		System.out.println("\n\n\nPlease Select your size:(M/L/XL)");
+        		size = sc.next().toUpperCase();
 				if(size == "M") {
 			        this.products.setProductName("T-Shirt 1");
 			        this.products.setProductprice(1000.00);
@@ -90,6 +93,7 @@ public class ServiceCategoriesImpl implements ServiceCategories{
 				}
 			}
             case 3: {
+           		System.out.println("Only M size availble");
             	this.products.setProductName("Trouser 1");
             	this.products.setProductprice(3000.00);
             	this.products.setProductSize("M");
@@ -97,6 +101,7 @@ public class ServiceCategoriesImpl implements ServiceCategories{
             	break;
             }
             case 4: {
+           		System.out.println("Only M size availble");
             	this.products.setProductName("Short 1");
             	this.products.setProductprice(500.00);
             	this.products.setProductSize("M");
@@ -124,7 +129,7 @@ public class ServiceCategoriesImpl implements ServiceCategories{
         System.out.println("\n===================================\n");
         System.out.println(products.getProductName());
         System.out.println("Price : Rs." + products.getProductprice() + "/=");
-        System.out.println("Size: Rs." + products.getProductSize() + "/=");
+        System.out.println("Size:" + products.getProductSize());
         System.out.println("=====================================\n");
     
 		            
