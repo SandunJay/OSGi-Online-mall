@@ -40,14 +40,14 @@ public class MovieAdminConsumerActivator implements BundleActivator {
 		        String movieID = sc.next();
 		        System.out.println("Enter Movie Name ?");
 		        String movieName = sc.next();
-		        System.out.println("Item Categories: Thriller, Action, Science fiction, Comedy, Western\nItem Category ?");
+		        System.out.println("Enter Movie Category: /nThriller, Action, Science fiction, Comedy, Western ");
 		        String movieCategory = sc.next();
-		        System.out.println("Enter movie Price ?");
+		        System.out.println("Enter ticket Price ?");
 		        String moviePrice = sc.next();
-		        System.out.println("Enter ticket Qty ?");
-		        String movieQty = sc.next();
+		        System.out.println("Enter available seats ?");
+		        String avbSeats = sc.next();
 
-		        movieitemsproducer.addMovies(movieID, movieName, movieCategory, moviePrice, movieQty);
+		        movieitemsproducer.addMovies(movieID, movieName, movieCategory, moviePrice, avbSeats);
 		    } while (!option.equals("-1"));
 	}
 

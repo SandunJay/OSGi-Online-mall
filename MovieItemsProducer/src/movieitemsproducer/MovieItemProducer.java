@@ -2,6 +2,7 @@ package movieitemsproducer;
 
 public interface MovieItemProducer {
 	public void moviecustomerwellcome();
+	public void getAllMovies();
 	public void searchMovieByCategory(String category);
 	public void searchMovieByID(String id);
 	public boolean isEmptyCategoryMsg();
@@ -13,7 +14,7 @@ public interface MovieItemProducer {
 	
 	
 	//Admin
-	public void addMovies(String movieID,String movieName,String movieCategory,String moviePrice,String movieQty);
+	public void addMovies(String movieID,String movieName,String movieCategory,String moviePrice,String avbSeats);
 	public boolean itemSaveSucc();
 
 }

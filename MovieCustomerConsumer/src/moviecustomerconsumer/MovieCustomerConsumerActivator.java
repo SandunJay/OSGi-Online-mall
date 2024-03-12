@@ -79,6 +79,8 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 					break;
 				}
 				movieItemsProducer.moviecustomerwellcome();
+				System.out.println("Select a movie from the list:");
+				movieItemsProducer.getAllMovies();
 				System.out.println("Choose a Category ?");
 				String iCategory = sc.next();
 				movieItemsProducer.searchMovieByCategory(iCategory);

@@ -30,15 +30,15 @@ public class CommonPublishImpl implements CommonPublish {
 
 public void printShopList() {
 	
-	System.out.println("\t\t\t\t\t\t---------------------------------------Our Shop  List-----------------------------------------");
+	System.out.println("---------------------------------------Our Shop  List-----------------------------------------");
 	System.out.println("");
 	for (int i = 0; i < shops.size(); i++)
 	  {
-		System.out.print("\t\t\t\t\t\t ID :  ");
+		System.out.print("ID :  ");
         System.out.println(i+1 + "  " +shops.get(i)  );
         System.out.println("");
       }
-	System.out.println("\t\t\t\t\t\t-------------------------------------------------------------------------------------------");
+	System.out.println("-------------------------------------------------------------------------------------------");
 }
 		
 

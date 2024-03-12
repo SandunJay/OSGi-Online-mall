@@ -6,21 +6,10 @@ public class Movie {
 	private String movieName;
 	private String movieCategory;
 	private String moviePrice;
-	private String ticketQty;
+	private String avbSeats;
 	
 
-
-//	public Movie(String movieID, String movieName, String movieCategory, String moviePrice, String ticketQty) {
-//		super();
-//		this.movieID = movieID;
-//		this.movieName = movieName;
-//		this.movieCategory = movieCategory;
-//		this.moviePrice = moviePrice;
-//		this.ticketQty = ticketQty;
-//	}
-
 	public Movie() {
-		// TODO Auto-generated constructor stub
 	}
 
 
@@ -48,11 +37,11 @@ public class Movie {
 	public void setMoviePrice(String moviePrice) {
 		this.moviePrice = moviePrice;
 	}
-	public String getTicketQty() {
-		return ticketQty;
+	public String getAvbSeats() {
+		return avbSeats;
 	}
-	public void setTicketQty(String ticketQty) {
-		this.ticketQty = ticketQty;
+	public void setAvbSeats(String ticketQty) {
+		this.avbSeats = ticketQty;
 	}
 	
 	

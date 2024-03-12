@@ -73,12 +73,12 @@ public class ProducerMovieItem implements MovieItemProducer{
 	}
 
 	@Override
-	public void addMovies(String movieID,String movieName, String movieCategory, String moviePrice, String movieQty) {
+	public void addMovies(String movieID,String movieName, String movieCategory, String moviePrice, String avbSeats) {
 		movie.setMovieID(movieID);
 		movie.setMovieName(movieName);
 		movie.setMovieCategory(movieCategory);
 		movie.setMoviePrice(moviePrice);
-		movie.setTicketQty(movieQty);
+		movie.setAvbSeats(avbSeats);
 		
 		this.saveItems();
 		
@@ -107,7 +107,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 			              String newiName = movie.getMovieName();
 			              String newiCategory = movie.getMovieCategory();
 			              String newiPrice = movie.getMoviePrice();
-			              String newiQty =  movie.getTicketQty();
+			              String newiQty =  movie.getAvbSeats();
 
 			    		   RandomAccessFile raf
 			                = new RandomAccessFile(myObj2, "rw");
@@ -163,6 +163,42 @@ public class ProducerMovieItem implements MovieItemProducer{
 			    }  
 
 	}
+	
+	public void getAllMovies() {
+	    try {
+	        File movieListFile = new File(Fpath + "\\MovieList.txt");
+	        if (movieListFile.createNewFile()) {
+	            System.out.println("File created: " + movieListFile.getName());
+	            System.out.println("File Opened: " + movieListFile.getAbsolutePath());
+	        } else {
+	            System.out.println("File Opened: " + movieListFile.getAbsolutePath());
+	        }
+	        try (Scanner scanner = new Scanner(movieListFile)) {
+	            System.out.println("|-----------------------------------------|");
+	            System.out.println("|             All Movies                  |");
+	            System.out.println("|-----------------------------------------|");
+	            System.out.println("| ID\t| Name\t| Category\t| Price\t| Qty |");
+	            while (scanner.hasNextLine()) {
+	                String line = scanner.nextLine();
+	                String[] movieData = line.split("!");
+	                String id = movieData[0];
+	                String name = movieData[1];
+	                String category = movieData[2];
+	                String price = movieData[3];
+	                String qty = movieData[4];
+	                System.out.printf("| %s\t| %s\t| %s\t\t| %s\t| %s\n", id, name, category, price, qty);
+	            }
+	            System.out.println("|-----------------------------------------|");
+	        } catch (IOException e) {
+	            System.out.println("An error occurred.");
+	            e.printStackTrace();
+	        }
+	    } catch (IOException e) {
+	        System.out.println("An error occurred.");
+	        e.printStackTrace();
+	    }
+	}
+	
 
 	@Override
 	public boolean itemSaveSucc() {
@@ -176,7 +212,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 				
 				try {
 					
-					File myObj2 = new File(Fpath+"\\ItemsList.txt");  
+					File myObj2 = new File(Fpath+"\\MovieList.txt");  
 					if (myObj2.createNewFile()) {  
 				        System.out.println("File created: " + myObj2.getName());  
 				        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
@@ -354,7 +390,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 				
 				try {
 					
-					File myObj2 = new File(Fpath+"\\ItemsList.txt");  
+					File myObj2 = new File(Fpath+"\\MovieList.txt");  
 					if (myObj2.createNewFile()) {  
 				        System.out.println("File created: " + myObj2.getName());  
 				        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
@@ -531,7 +567,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 		
 		try {
 			
-			File myObj2 = new File(Fpath+"\\ItemsList.txt");  
+			File myObj2 = new File(Fpath+"\\MovieList.txt");  
 			if (myObj2.createNewFile()) {  
 		        System.out.println("File created: " + myObj2.getName());  
 		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
