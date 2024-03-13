@@ -1,0 +1,7 @@
+package employeeproducer;
+
+public interface FoodShopEmployeeService {
+	public int EmployeeService();
+	public int dailyReport();
+
+}

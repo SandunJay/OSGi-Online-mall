@@ -1,0 +1,5 @@
+package employeeconsumer;
+
+public class EmployeeInterface {
+
+}

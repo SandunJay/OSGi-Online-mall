@@ -1,0 +1,57 @@
+package employeeproducer;
+
+import java.util.List;
+import java.util.Scanner;
+
+public class FoodShopEmployeeServiceImpl implements FoodShopEmployeeService{
+	
+	Scanner sc = new Scanner(System.in);
+	
+	public synchronized int addEmployeeRecord(int id, String name, int hours, int othours) {
+		int salary;
+		salary = (hours * 150) + (othours * 250);
+		EmployeeModel newRecord = new EmployeeModel(id, name, hours, othours, salary);
+		EmployeeReport.dailyReport.add(newRecord);
+		return 1;
+	}
+
+	@Override
+	public int EmployeeService() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int dailyReport() {
+		// TODO Auto-generated method stub
+
+		List<EmployeeModel> finalreport = EmployeeReport.dailyReport;
+
+		if (finalreport.size() == 0) {
+			System.out.println("");
+			System.out.println("No Records Found!");
+			System.out.println("");
+		} else {
+			System.out.println("");
+			System.out.println("Employee ID:" + "\t" + "Employee Name" + "\t" + "Hours Worked" + "\t" + "OT Hours"
+					+ "\t" + "Salary" + "\t");
+
+			for (EmployeeModel record : finalreport) {
+				System.out.println(record.getEmpId() + "\t	" + record.getName() + "\t	" + record.getHours() + "\t	"
+						+ record.getOthours() + "\t	" + record.getSalary() + "\t");
+			}
+
+		}
+		System.out.println("");
+		return 1;
+	}
+
+	@Override
+	public int calSalary(int hrs, int ot) {
+		// TODO Auto-generated method stub
+		int salary;
+		salary = (hrs * 150) + (ot * 250);
+		return salary;
+	}
+
+}

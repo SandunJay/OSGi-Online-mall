@@ -1,0 +1,18 @@
+package employeeproducer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+
+public class Activator implements BundleActivator {
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		System.out.println("Employee Producer Start!!");
+	}
+	
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Employee Producer Stop!!");
+	}
+
+}

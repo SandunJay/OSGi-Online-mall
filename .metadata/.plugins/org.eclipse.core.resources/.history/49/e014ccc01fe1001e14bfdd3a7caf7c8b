@@ -1,0 +1,5 @@
+package employeeproducer;
+
+public interface FoodShopEmployeeService {
+
+}

@@ -1,0 +1,27 @@
+package employeemanagementinterface;
+
+import employeeproducer.FoodShopEmployeeService;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+import org.osgi.util.tracker.ServiceTracker;
+
+public class Activator implements BundleActivator {
+	
+	ServiceReference serviceReference;
+	
+	static FoodShopEmployeeService foodEmpService;
+	
+	public static ServiceTracker EmpTrack;
+
+	@Override
+	public void start(BundleContext context) throws Exception {
+		System.out.println("Gui Service Start!!");
+	}
+	
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Gui Service Is Stop!!");
+	}
+
+}

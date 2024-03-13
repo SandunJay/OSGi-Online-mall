@@ -1,0 +1,26 @@
+package employeeconsumer;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+
+public class Activator implements BundleActivator {
+
+	ServiceReference empServiceRef;
+	static FoodShopEmpService foodEmpService;
+	@Override
+	public void start(BundleContext context) throws Exception {
+		System.out.println("Employee Consumer Start!!");
+		
+		empServiceRef = context.getServiceReference(FoodShopEmpService.class.getName());
+		foodEmpService = (FoodShopEmpService)context.getService(empServiceRef);
+		foodEmpService.EmployeeService();
+	}
+	
+	@Override
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Employee Consumer Stop!!");
+		context.ungetService(empServiceRef);
+	}
+
+}
