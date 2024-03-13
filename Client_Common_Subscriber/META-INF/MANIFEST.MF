@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Client_Common_Subscriber
+Bundle-SymbolicName: Client_Common_Subscriber
+Bundle-Version: 1.0.0.qualifier
+Export-Package: client_common_subscriber
+Bundle-Activator: client_common_subscriber.Activator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: Client.Common.Subscriber
+Import-Package: client_common_publisher,
+ org.osgi.framework;version="1.3.0",
+ restaurantadminpublisher,
+ restaurantadminsubscriber,
+ restaurantpublisher,
+ restaurantsubscriber
+Bundle-ActivationPolicy: lazy

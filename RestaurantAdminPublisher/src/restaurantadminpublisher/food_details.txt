@@ -1,0 +1,9 @@
+2,Vegetable Samosa,100.0
+3,Chicken Spring Rolls,120.0
+4,Fish Cutlets,80.0
+5,Potato Wedges,70.0
+6,Chicken Wings,150.0
+7,Mozzarella Sticks,200.0
+8,Fresh Orange Juice,250.0
+9,Iced Tea,200.0
+10,Hot Milo,100.0
