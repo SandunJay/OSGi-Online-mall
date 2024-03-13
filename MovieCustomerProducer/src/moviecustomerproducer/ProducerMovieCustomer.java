@@ -59,10 +59,10 @@ public class ProducerMovieCustomer implements MovieCustomerProducer{
 		try {  
 		      File myObj = new File(Fpath+"\\customer.txt");  
 		      if (myObj.createNewFile()) {  
-		        System.out.println("File created: " + myObj.getName());  
-		        System.out.println("File Opened: " + myObj.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj.getName());  
+//		        System.out.println("File Opened: " + myObj.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj.getAbsolutePath()); 
 		      } 
 		    	  try { 
 		    		  String nameNumberString;
@@ -166,10 +166,10 @@ public class ProducerMovieCustomer implements MovieCustomerProducer{
 			
 			File myObj = new File(Fpath+"\\customer.txt");  
 			if (myObj.createNewFile()) {  
-		        System.out.println("File created: " + myObj.getName());  
-		        System.out.println("File Opened: " + myObj.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj.getName());  
+//		        System.out.println("File Opened: " + myObj.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj.getAbsolutePath()); 
 		      } 
 		    	  try { 
 		    		  String nameNumberString;

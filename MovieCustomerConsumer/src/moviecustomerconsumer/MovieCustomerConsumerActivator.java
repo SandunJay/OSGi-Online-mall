@@ -105,7 +105,7 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 							}
 							boolean qtyCheck = false;
 							while(qtyCheck == false) {
-								System.out.println("How many Qty you Need ?");
+								System.out.println("How many Tickets you Need ?");
 								String icQty = sc.next();
 								qtyCheck=movieItemsProducer.checkQty(iID,icQty);
 								if(qtyCheck == true) {
@@ -116,7 +116,7 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 									break;
 								}
 								if(qtyCheck == false) {
-									System.out.println("No Qty Available for this Request! and try less Qty");
+									System.out.println("No Tickets Available for this Request! and try less t");
 									continue;
 								}
 								
@@ -135,7 +135,7 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 	}
 
 	public void stop(BundleContext context) throws Exception {
-		System.out.println("Customer Consumer Stop !!!");
+		System.out.println("Movie Consumer Stop !!!");
 		if(serviceReference != null) {
 			context.ungetService(serviceReference);
 		}

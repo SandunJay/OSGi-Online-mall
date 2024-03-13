@@ -11,8 +11,8 @@ public class Activator implements BundleActivator {
 
 	public void start(BundleContext context) throws Exception {
 		System.out.println("Movie Customer Producer Starting");
-		MovieCustomerProducer bakerycustomerproducer = (MovieCustomerProducer) new ProducerMovieCustomer();
-		publishServiceRegistration = context.registerService(MovieCustomerProducer.class.getName(), bakerycustomerproducer, null);
+		MovieCustomerProducer moviecustomerproducer = (MovieCustomerProducer) new ProducerMovieCustomer();
+		publishServiceRegistration = context.registerService(MovieCustomerProducer.class.getName(), moviecustomerproducer, null);
 	}
 
 	public void stop(BundleContext context) throws Exception {

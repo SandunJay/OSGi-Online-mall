@@ -64,6 +64,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 	@Override
 	public void moviecustomerwellcome() {
 		System.out.println("_________________________________  Movies _________________________________\n\n"
+				+"\n_________________________________  Categories _________________________________"
 				+ "1) Thriller\n"
 				+ "2) Action\n"
 				+ "3) Science fiction\n"
@@ -90,10 +91,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			try {  
 			      File myObj2 = new File(Fpath+"\\MovieList.txt");  
 			      if (myObj2.createNewFile()) {  
-			        System.out.println("File created: " + myObj2.getName()); 
-			        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//			        System.out.println("File created: " + myObj2.getName()); 
+//			        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      } else {
-			    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//			    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      }
 			    	  try { 
 			    		  String nameNumberString;
@@ -299,10 +300,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			
 			File myObj2 = new File(Fpath+"\\MovieList.txt");  
 			if (myObj2.createNewFile()) {  
-		        System.out.println("File created: " + myObj2.getName());  
-		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj2.getName());  
+//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } 
 		    	  try { 
 		    		  String nameNumberString;
@@ -392,10 +393,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 					
 					File myObj2 = new File(Fpath+"\\MovieList.txt");  
 					if (myObj2.createNewFile()) {  
-				        System.out.println("File created: " + myObj2.getName());  
-				        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//				        System.out.println("File created: " + myObj2.getName());  
+//				        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 				      } else {
-				    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//				    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 				      } 
 				    	  try { 
 				    		  String nameNumberString;
@@ -481,10 +482,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			
 		      File myObj2 = new File(Fpath+this.getBillName()+".txt");  
 		      if (myObj2.createNewFile()) {  
-		        System.out.println("File created: " + myObj2.getName()); 
-		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj2.getName()); 
+//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      }
 		    	  try { 
 		    		  String nameNumberString;
@@ -569,10 +570,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			
 			File myObj2 = new File(Fpath+"\\MovieList.txt");  
 			if (myObj2.createNewFile()) {  
-		        System.out.println("File created: " + myObj2.getName());  
-		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj2.getName());  
+//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } 
 		    	  try { 
 		    		  String nameNumberString;
@@ -643,10 +644,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			
 		      File myObj2 = new File(Fpath+"\\"+this.getBillName()+".txt");  
 		      if (myObj2.createNewFile()) {  
-		        System.out.println("File created: " + myObj2.getName()); 
-		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj2.getName()); 
+//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      }
 		    	  try { 
 		    		  String nameNumberString;
@@ -710,10 +711,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			
 		      File myObj2 = new File(Fpath+"\\"+this.getBillName()+".txt");  
 		      if (myObj2.createNewFile()) {  
-		        System.out.println("File created: " + myObj2.getName()); 
-		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		        System.out.println("File created: " + myObj2.getName()); 
+//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
-		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      }
 		    	  try { 
 		    		  String nameNumberString;
@@ -767,10 +768,10 @@ public class ProducerMovieItem implements MovieItemProducer{
 			try {  
 			      File myObj2 = new File(Fpath+"\\BillRegister.txt");  
 			      if (myObj2.createNewFile()) {  
-			        System.out.println("File created: " + myObj2.getName()); 
-			        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//			        System.out.println("File created: " + myObj2.getName()); 
+//			        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      } else {
-			    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
+//			    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      }
 			    	  try { 
 			    		  String nameNumberString;
