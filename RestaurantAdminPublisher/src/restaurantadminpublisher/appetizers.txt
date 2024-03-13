@@ -1,0 +1,5 @@
+1,Chicken Wings,400.00,74
+2,Mozzarella Sticks,350.0,100
+3,Onion Rings,300.0,399
+4,a1,111.0,1
+5,a2,1.0,0

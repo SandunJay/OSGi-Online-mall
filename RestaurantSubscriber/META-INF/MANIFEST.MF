@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RestaurantSubscriber
+Bundle-SymbolicName: RestaurantSubscriber
+Bundle-Version: 1.0.0.qualifier
+Export-Package: restaurantsubscriber
+Bundle-Activator: restaurantsubscriber.RestaurantSubscriberActivator
+Bundle-Vendor: MTIT
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Automatic-Module-Name: RestaurantSubscriber
+Import-Package: org.osgi.framework;version="1.3.0",
+ restaurantpublisher
+Bundle-ActivationPolicy: lazy
