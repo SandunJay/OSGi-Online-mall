@@ -1,6 +1,7 @@
 package subscriber;
 
 import categories.ServiceCategories;
+
 import deliver.ServiceDelivery;
 import java.util.Scanner;
 
@@ -11,11 +12,18 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
 import promo.ServicePromo;
 import promo.ServicePromoImpl;
+import rentalpublisher.RentalPublisher;
+
 
 public class CustomerActivator implements BundleActivator {
 	
+	ServiceReference serviceReference;
+
+
 	private boolean authenticateUser() {
-		System.out.println("\n==============Login==============\n");
+		System.out.println("===============================================================");
+		System.out.println("|                   Welcome Tesla's login page                |");
+		System.out.println("===============================================================");
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter username:");
         String username = sc.nextLine();
@@ -25,12 +33,13 @@ public class CustomerActivator implements BundleActivator {
         
         if (username.equals("user") && password.equals("123")) {
             return true;
-        } else {
+        } else if(username.equals("admin") && password.equals("321")){
+        	return true;
+        }else {
             return false;
         }
     }
 	
-	ServiceReference serviceReference;
 
 	@Override
 	public void start(BundleContext context) throws Exception {
@@ -94,8 +103,14 @@ public class CustomerActivator implements BundleActivator {
                         }
                         continue;
                     }
-                    case 99: {
-                        continue;
+                    case 4: {
+                        this.serviceReference = context.getServiceReference(RentalPublisher.class.getName());
+                        final RentalPublisher serviceRental = (RentalPublisher)context.getService(this.serviceReference);
+                        if (serviceRental != null) {
+                        	serviceRental.rental();
+                            continue;
+                        }
+                        continue;                        
                     }
                     default: {
                         System.out.println("Invalid number.");

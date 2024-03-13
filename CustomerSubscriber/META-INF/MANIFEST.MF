@@ -9,6 +9,7 @@ Automatic-Module-Name: Subscriber
 Import-Package: categories,
  deliver,
  org.osgi.framework;version="1.3.0",
- promo
+ promo,
+ rentalpublisher
 Bundle-ActivationPolicy: lazy
 Export-Package: subscriber

@@ -1,11 +1,12 @@
 #encoding=UTF-8
 #version=1
-Categories,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/Categories/,4,true
+CategoryPublisher,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/CategoryPublisher/,4,true
 CommonPublisher,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/CommonPublisher/,4,true
 Common_Subscriber,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/Common_Subscriber/,4,true
 CustomerSubscriber,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/CustomerSubscriber/,4,true
-Deliver,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/Deliver/,4,true
-Promo,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/Promo/,4,true
+DeliverPublisher,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/DeliverPublisher/,4,true
+PromotionPublisher,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/PromotionPublisher/,4,true
+RentalPublisher,1.0.0.qualifier,file:/C:/Users/DELL/OneDrive/Desktop/OSGI-new/RentalPublisher/,4,true
 bcpg,1.77.0,file:/C:/eclipse/plugins/bcpg_1.77.0.jar,4,true
 bcpkix,1.77.0,file:/C:/eclipse/plugins/bcpkix_1.77.0.jar,4,true
 bcprov,1.77.0,file:/C:/eclipse/plugins/bcprov_1.77.0.jar,4,true
