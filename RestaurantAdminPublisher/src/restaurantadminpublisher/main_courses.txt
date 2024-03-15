@@ -1,0 +1,3 @@
+1,Spaghetti Bolognese,600.0,100
+2,Grilled Salmon,800.0,50
+3,Chicken Parmesan,700.0,25

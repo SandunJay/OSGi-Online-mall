@@ -10,7 +10,9 @@ import itemsAdder.Movie;
 public class ProducerMovieItem implements MovieItemProducer{
 
 	boolean itemSaveSuccMsg , isEmptyCategory, invalidID;
-	String BillName = "demo";
+//	String BillName = "demo";
+    private String currentBillName;
+
 	public int myBillGrandTot;
 	String Fpath = System.getProperty("user.home");
 	
@@ -24,11 +26,11 @@ public class ProducerMovieItem implements MovieItemProducer{
 	}
 
 	public String getBillName() {
-		return BillName;
+		return currentBillName;
 	}
 
 	public void setBillName(String billName) {
-		BillName = billName;
+		currentBillName = billName;
 	}
 
 	public boolean isInvalidID() {
@@ -91,10 +93,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 			try {  
 			      File myObj2 = new File(Fpath+"\\MovieList.txt");  
 			      if (myObj2.createNewFile()) {  
-//			        System.out.println("File created: " + myObj2.getName()); 
-//			        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      } else {
-//			    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 			      }
 			    	  try { 
 			    		  String nameNumberString;
@@ -393,10 +392,7 @@ public class ProducerMovieItem implements MovieItemProducer{
 					
 					File myObj2 = new File(Fpath+"\\MovieList.txt");  
 					if (myObj2.createNewFile()) {  
-//				        System.out.println("File created: " + myObj2.getName());  
-//				        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 				      } else {
-//				    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 				      } 
 				    	  try { 
 				    		  String nameNumberString;
@@ -467,90 +463,160 @@ public class ProducerMovieItem implements MovieItemProducer{
 		
 		return check;
 	}
-
+	
 	@Override
-	public void addToBill(String CName, String iID, String iQty) {
-		
-		String gNo= Integer.toString(genarateANumber());
-		this.setBillName(CName+gNo);
-		int p =this.getItemPrice(iID);
-		int tot =  p*Integer.parseInt(iQty);
-		boolean found = false;
-		
-		
-		try {  
-			
-		      File myObj2 = new File(Fpath+this.getBillName()+".txt");  
-		      if (myObj2.createNewFile()) {  
-//		        System.out.println("File created: " + myObj2.getName()); 
-//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
-		      } else {
-//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
-		      }
-		    	  try { 
-		    		  String nameNumberString;
-		    		  int index;
-		    		  String iiID;
-		              String iiQty;
-		              String iTPrice;
-		              String newiID = iID;
-		              String newTPrice =Integer.toString(tot);
-		              String newiQty =  iQty;
+	public String getItemQty(String icID) {
+	    String iQty = null; // Initialize to null
+	    
+	    try {
+	        File myObj2 = new File(Fpath + "\\MovieList.txt");
 
-		    		   RandomAccessFile raf
-		                = new RandomAccessFile(myObj2, "rw");
+	        if (myObj2.createNewFile()) {
+	            // File created
+	        } else {
+	            // File already exists
+	        }
 
-		            while (raf.getFilePointer() < raf.length()) {
+	        try (RandomAccessFile raf = new RandomAccessFile(myObj2, "rw")) {
+	            String nameNumberString;
+	            boolean found = false;
 
-		                nameNumberString = raf.readLine();
+	            while ((nameNumberString = raf.readLine()) != null) {
+	                String[] lineSplit = nameNumberString.split("!");
 
-		                String[] lineSplit
-		                    = nameNumberString.split("!");
-		 
-		               iiID = lineSplit[0];
-		               iiQty = lineSplit[1];
-		               iTPrice = lineSplit[2];
-			          
-		                if (iiID.equals(newiID)) {
-		                    found = true;
-		                    System.out.println(" Already Inserted!!! ");
-		                    
-		                    break;
-		                }
-		            }
-		 
-		            if (found == false) {
+	                String iID = lineSplit[0];
+	                iQty = lineSplit[4]; // Retrieve quantity
 
-		                nameNumberString
-		                    = newiID + "!"
-		                      + newiQty+"!"+newTPrice;
-		 
-		               
-		                raf.writeBytes(nameNumberString);
-		 
-		                raf.writeBytes(System.lineSeparator());
-		 
-		                System.out.println("Successfully Inserted !!! ");
-		                
-		                this.setItemSaveSuccMsg(true);
-		                raf.close();
-		            }
+	                if (iID.equals(icID)) {
+	                    found = true;
+	                    break;
+	                }
+	            }
 
-		    	    } catch (IOException e) {
-		    	      System.out.println("An error occurred.");
-		    	      e.printStackTrace();
-		    	    }  
-		      
+	            if (!found) {
+	                // Item not found
+	                iQty = "-1"; // Set a flag value to indicate item not found
+	            }
+	        } catch (IOException e) {
+	            System.out.println("An error occurred.");
+	            e.printStackTrace();
+	        }
+	    } catch (IOException e) {
+	        System.out.println("An error occurred.");
+	        e.printStackTrace();
+	    }
 
-		    } catch (IOException e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();  
-		    }  
-
-		
-		
+	    return iQty;
 	}
 	
+//	@Override
+//	public void addToBill(String CName, String iID, String iQty, String iTPrice) {
+//	    String gNo = Integer.toString(genarateANumber());
+//	    String billName = CName + gNo;
+//	    String billFolderPath = Fpath + "\\" + billName;
+//	    
+//	    // Create the directory if it doesn't exist
+//	    File billFolder = new File(billFolderPath);
+//	    if (!billFolder.exists()) {
+//	        if (billFolder.mkdirs()) {
+//	            System.out.println("Bill folder created: " + billFolderPath);
+//	        } else {
+//	            System.out.println("Failed to create bill folder: " + billFolderPath);
+//	            return;
+//	        }
+//	    }
+//
+//	    try {
+//	        File billFile = new File(billFolderPath + "\\" + billName + ".txt");
+//	        if (billFile.createNewFile()) {
+//	            System.out.println("Bill file created: " + billFile.getName());
+//	        } else {
+//	            System.out.println("Bill file already exists: " + billFile.getName());
+//	        }
+//
+//	        try (RandomAccessFile raf = new RandomAccessFile(billFile, "rw")) {
+//	            boolean found = false;
+//	            String nameNumberString;
+//
+//	            while ((nameNumberString = raf.readLine()) != null) {
+//	                String[] lineSplit = nameNumberString.split("!");
+//
+//	                String iiID = lineSplit[0];
+//
+//	                if (iiID.equals(iID)) {
+//	                    found = true;
+//	                    System.out.println("Item already inserted!");
+//	                    break;
+//	                }
+//	            }
+//
+//	            if (!found) {
+//	                String newItem = iID + "!" + iQty + "!" + iTPrice;
+//	                raf.writeBytes(newItem);
+//	                raf.writeBytes(System.lineSeparator());
+//	                System.out.println("Successfully inserted!");
+//	            }
+//	        }
+//	    } catch (IOException e) {
+//	        System.out.println("An error occurred.");
+//	        e.printStackTrace();
+//	    }
+//	}
+	
+	@Override
+	public void addToBill(String CName, String iID, String iQty, String iTPrice) {
+        String gNo = Integer.toString(genarateANumber());
+        this.currentBillName = CName + gNo;
+        String billFolderPath = Fpath + "\\" + this.currentBillName;
+
+	    // Create the directory if it doesn't exist
+	    File billFolder = new File(billFolderPath);
+	    if (!billFolder.exists()) {
+	        if (billFolder.mkdirs()) {
+	            System.out.println("Bill folder created: " + billFolderPath);
+	        } else {
+	            System.out.println("Failed to create bill folder: " + billFolderPath);
+	            return;
+	        }
+	    }
+
+	    try {
+	        File billFile = new File(billFolderPath + "\\" + currentBillName + ".txt");
+	        if (billFile.createNewFile()) {
+	            System.out.println("Bill file created: " + billFile.getName());
+	        } else {
+	            System.out.println("Bill file already exists: " + billFile.getName());
+	        }
+
+	        try (RandomAccessFile raf = new RandomAccessFile(billFile, "rw")) {
+	            boolean found = false;
+	            String nameNumberString;
+
+	            while ((nameNumberString = raf.readLine()) != null) {
+	                String[] lineSplit = nameNumberString.split("!");
+
+	                String iiID = lineSplit[0];
+
+	                if (iiID.equals(iID)) {
+	                    found = true;
+	                    System.out.println("Item already inserted!");
+	                    break;
+	                }
+	            }
+
+	            if (!found) {
+	                String newItem = iID + "!" + iQty + "!" + iTPrice;
+	                raf.writeBytes(newItem);
+	                raf.writeBytes(System.lineSeparator());
+	                System.out.println("Successfully inserted!");
+	            }
+	        }
+	    } catch (IOException e) {
+	        System.out.println("An error occurred while adding item to bill.");
+	        e.printStackTrace();
+	    }
+	}
+
 	
 	public int genarateANumber() {
 		
@@ -642,9 +708,9 @@ public class ProducerMovieItem implements MovieItemProducer{
 		
 		try {  
 			
-		      File myObj2 = new File(Fpath+"\\"+this.getBillName()+".txt");  
+            File myObj2 = new File(Fpath + "\\" + this.currentBillName + ".txt");
 		      if (myObj2.createNewFile()) {  
-//		        System.out.println("File created: " + myObj2.getName()); 
+		        System.out.println("File created: " + myObj2.getName()); 
 //		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
 		      } else {
 //		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
@@ -701,64 +767,6 @@ public class ProducerMovieItem implements MovieItemProducer{
 		    }  
 
 		
-	}
-	
-	public void calculateGrandTot() {
-		boolean found = false;
-		int gt=0;
-		
-		try {  
-			
-		      File myObj2 = new File(Fpath+"\\"+this.getBillName()+".txt");  
-		      if (myObj2.createNewFile()) {  
-//		        System.out.println("File created: " + myObj2.getName()); 
-//		        System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
-		      } else {
-//		    	  System.out.println("File Opened: " + myObj2.getAbsolutePath()); 
-		      }
-		    	  try { 
-		    		  String nameNumberString;
-		    		  int index;
-		    		  String iiID;
-		              String iiQty;
-		              String iTPrice;
-		              
-
-		    		   RandomAccessFile raf
-		                = new RandomAccessFile(myObj2, "rw");
-
-		    		   
-		    		   
-		    		   while (raf.getFilePointer() < raf.length()) {
-
-		                nameNumberString = raf.readLine();
-
-		                String[] lineSplit
-		                    = nameNumberString.split("!");
-		 
-		               iiID = lineSplit[0];
-		               iiQty = lineSplit[1];
-		               iTPrice = lineSplit[2];
-
-		               
-		               this.myBillGrandTot =this.myBillGrandTot+Integer.parseInt(iTPrice);
-		               
-		               
-		               
-		            }
-		            	
-		            	
-
-		    	    } catch (IOException e) {
-		    	      System.out.println("An error occurred.");
-		    	      e.printStackTrace();
-		    	    }  
-		      
-
-		    } catch (IOException e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();  
-		    }  
 	}
 
 	@Override
@@ -829,8 +837,66 @@ public class ProducerMovieItem implements MovieItemProducer{
 		
 	}
 	
-	
-	
+	public String getMoviePriceByID(String movieID) {
+	    String price = ""; // Default price, in case movie is not found
+	    
+	    try {
+	        File movieListFile = new File(Fpath + "\\MovieList.txt");
+	        if (movieListFile.createNewFile()) {
+	            // File created
+	        }
 
+	        try (Scanner scanner = new Scanner(movieListFile)) {
+	            while (scanner.hasNextLine()) {
+	                String line = scanner.nextLine();
+	                String[] movieData = line.split("!");
+	                String id = movieData[0];
+	                String moviePrice = movieData[3];
 
+	                if (id.equals(movieID)) {
+	                    price = moviePrice;
+	                    break;
+	                }
+	            }
+	        } catch (IOException e) {
+	            System.out.println("An error occurred while reading movie data.");
+	            e.printStackTrace();
+	        }
+	    } catch (IOException e) {
+	        System.out.println("An error occurred while accessing movie list file.");
+	        e.printStackTrace();
+	    }
+
+	    return price;
+	}
+
+	
+	@Override
+    public void calculateGrandTot() {
+        this.myBillGrandTot = 0; // Reset total before calculation
+        try {
+            File billFile = new File(Fpath + "\\" + this.currentBillName + ".txt"); // Use current bill name
+            if (billFile.exists()) { // Check if bill file exists
+                try (Scanner scanner = new Scanner(billFile)) {
+                    while (scanner.hasNextLine()) {
+                        String line = scanner.nextLine();
+                        String[] itemData = line.split("!");
+                        int itemPrice = Integer.parseInt(itemData[2]); // Item price
+                        int itemQty = Integer.parseInt(itemData[1]); // Item quantity
+                        this.myBillGrandTot += itemPrice * itemQty; // Add to total
+                    }
+                } catch (IOException e) {
+                    System.out.println("An error occurred while reading the bill file.");
+                    e.printStackTrace();
+                }
+            } else {
+                System.out.println("Bill file does not exist.");
+            }
+        } catch (Exception e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+    }
+
+	
 }

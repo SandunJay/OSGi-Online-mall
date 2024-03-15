@@ -31,13 +31,17 @@ public class CommonPublishImpl implements CommonPublish {
 public void printShopList() {
 	
 	System.out.println("---------------------------------------Our Shop  List-----------------------------------------");
-	System.out.println("");
-	for (int i = 0; i < shops.size(); i++)
-	  {
-		System.out.print("ID :  ");
-        System.out.println(i+1 + "  " +shops.get(i)  );
-        System.out.println("");
-      }
+//	System.out.println("");
+//	for (int i = 0; i < shops.size(); i++)
+//	  {
+//		System.out.print("ID :  ");
+//        System.out.println(i+1 + "  " +shops.get(i)  );
+//        System.out.println("");
+//      }
+	System.out.println("1.Cinema");
+	System.out.println("2.Saloon");
+	System.out.println("3.Restaurant");
+	System.out.println("4.Clothing store");
 	System.out.println("-------------------------------------------------------------------------------------------");
 }
 		

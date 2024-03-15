@@ -73,7 +73,7 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 				if(buyItemsDecision.equals("n")||buyItemsDecision.equals("N")) {
 					
 					if(check == true) {
-						movieItemsProducer.showMyBill();
+						movieItemsProducer.calculateGrandTot();
 					}
 					
 					break;
@@ -93,12 +93,12 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 						if(buyAnItemsDecision.equals("n")||buyAnItemsDecision.equals("N")) {
 							break;
 						}
-						System.out.println("Enter Item ID ?");
+						System.out.println("Enter Movie ID ?");
 						String iID = sc.next();
 						movieItemsProducer.searchMovieByID(iID);
 						String buyAnItemDecision = "y";
 						while(buyAnItemDecision.equals("y")||buyAnItemDecision.equals("Y")) {
-							System.out.println("Do you Want To Buy Item ?(Y/N)");
+							System.out.println("Do you want to buy tickets for this movie ?(Y/N)");
 							buyAnItemDecision = sc.next();
 							if(buyAnItemDecision.equals("n")||buyAnItemDecision.equals("N")) {
 								break;
@@ -111,12 +111,13 @@ public class MovieCustomerConsumerActivator implements BundleActivator {
 								if(qtyCheck == true) {
 									//AddtoBill
 									String myName=movieCustomerProducer.getMyName();
-									movieItemsProducer.addToBill(myName, iID, icQty);
+									String mPrice = movieItemsProducer.getMoviePriceByID(iID);
+									movieItemsProducer.addToBill(myName, iID, icQty, mPrice);
 									check = true;
 									break;
 								}
 								if(qtyCheck == false) {
-									System.out.println("No Tickets Available for this Request! and try less t");
+									System.out.println("No seats vailable for this movie!");
 									continue;
 								}
 								
