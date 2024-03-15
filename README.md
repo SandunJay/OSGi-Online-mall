@@ -48,7 +48,6 @@
   <p>Thank you for visiting the OSGi Online Mall repository. Happy shopping! 🛍️🎬🍽️💇‍♀️</p>
 
 ![Diagram](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/c64fd110-5043-49d7-8042-975b682b1c45)
-![d](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/a8421a1b-9944-4bfd-9b26-f0bd9c37908e)
 
 
 </body>
