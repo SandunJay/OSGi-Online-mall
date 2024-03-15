@@ -46,10 +46,9 @@
   <p>Contributions to this project are welcomed! Please feel free to submit bug reports, feature requests, or pull requests.</p>
 
   <p>Thank you for visiting the OSGi Online Mall repository. Happy shopping! 🛍️🎬🍽️💇‍♀️</p>
-  ![d](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/0dff367d-0d33-4b69-9ed5-745ec1d127d4)
-  ![d](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/bbc9cbe3-e0cd-4e81-80c0-c52ff61c7d5b)
-![d](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/ffdca29a-d50f-484c-a8f0-06ac3e409bbe)
 
+![Diagram](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/c64fd110-5043-49d7-8042-975b682b1c45)
+![d](https://github.com/SandunJay/OSGi-Online-mall/assets/99672222/a8421a1b-9944-4bfd-9b26-f0bd9c37908e)
 
 
 </body>
